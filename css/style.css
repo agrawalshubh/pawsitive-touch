@@ -1,0 +1,261 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    max-height: 500px; /* Adjust as needed */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Add some spacing below the first button */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.contact-button {
+    margin-top: 10px; /* Add some spacing for the contact button */
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-grid, .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item, .product-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service-item img, .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-item h3, .product-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack images and text vertically on smaller screens */
+    gap: 20px;
+    align-items: center; /* Center content on smaller screens */
+}
+
+.about-images {
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Make images container take full width */
+    justify-content: center; /* Center images */
+}
+
+.about-image {
+    max-width: 45%; /* Adjust as needed to fit two images side by side */
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    text-align: center; /* Center the text */
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.google-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.google-form iframe {
+    max-width: 100%; /* Make the iframe responsive */
+    width: 640px; /* Default width */
+    height: 480px; /* Default height */
+    border: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-images {
+        flex-direction: column; /* Stack images on smaller screens */
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 80%; /* Make images wider on smaller screens */
+    }
+
+    .about-text {
+        text-align: left; /* Align text to the left on smaller screens for better readability */
+    }
+
+    .google-form iframe {
+        height: auto; /* Adjust height automatically on smaller screens */
+    }
+}
