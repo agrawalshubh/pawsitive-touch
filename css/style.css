@@ -22,7 +22,7 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 70px; /* Increased the height to make the logo bigger */
 }
 
 nav ul {
